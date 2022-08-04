@@ -1219,11 +1219,12 @@ There are three things which are possible to do in this situation:
    in fullscreen. However, some apps might react badly to this (deadlock until
    you go out of fullscreen).
 3. Leave fullscreen mode.
+4. Always show floating windows in fullscreen mode
 
 *Syntax*:
------------------------------------------------------
-popup_during_fullscreen smart|ignore|leave_fullscreen
------------------------------------------------------
+------------------------------------------------------------
+popup_during_fullscreen smart|ignore|leave_fullscreen|always
+------------------------------------------------------------
 
 *Example*:
 ------------------------------

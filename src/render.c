@@ -215,7 +215,7 @@ static void render_root(Con *con, Con *fullscreen) {
         Con *fullscreen = con_get_fullscreen_covering_ws(workspace);
         Con *child;
         TAILQ_FOREACH (child, &(workspace->floating_head), floating_windows) {
-            if (fullscreen != NULL) {
+            if (fullscreen != NULL && config.popup_during_fullscreen !== PDF_ALWAYS) {
                 /* Don’t render floating windows when there is a fullscreen
                  * window on that workspace. Necessary to make floating
                  * fullscreen work correctly (ticket #564). Exception to the

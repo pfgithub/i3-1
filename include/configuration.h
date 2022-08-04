@@ -261,6 +261,9 @@ struct Config {
 
         /* just ignore the popup, that is, don’t map it */
         PDF_IGNORE = 2,
+
+        /* display all floating windows above fullscreen windows */
+        PDF_ALWAYS = 3,
     } popup_during_fullscreen;
 
     /* The number of currently parsed barconfigs */
